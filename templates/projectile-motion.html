@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form action="#" method="post">
+	<p>Enter the initial velocity:</p>
+	<p><input type="any" name="velocity" /></p>
+    <p>Enter the angle (theta):</p>
+    <p><input type="any" name="theta" /></p>
+
+
+	<p><input type="submit" value="submit"/></p>
+</form>
+
+<h1>Visulaization</h1>
+
+<img src="{{ url_for('visualize')}}">
+
+
+{% endblock %}

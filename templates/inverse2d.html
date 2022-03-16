@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+	<style>
+.scrollmenu {
+  width: 200px; /* Set a width if you like */
+}
+
+.scrollmenu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.scrollmenu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.scrollmenu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
+</style>
+
+<div class="scrollmenu">
+  <a href="{{ url_for('index') }}" class="active">Home</a>
+  <a href="inverse2d">Inverse 2d</a>
+  <a href="inverse-matrix">Inverse 3d</a>
+  <a href="inverse4d">Inverse 4d</a>
+</div>
+<div class="row justify-content-center">
+            <div class="col-md-10"></div>
+
+
+
+<div class="container">
+		<div class="well well-lg">
+			<h1 class="text-center">Inverse Matrix for 2d matrix</h1>
+			<form action="#" method="POST">
+				<input type="any" name="a11" size="2">
+				<input type="any" name="a12" size="2">
+
+<br>
+				<br>
+				<input type="any" name="a21" size="2">
+				<input type="any" name="a22" size="2">
+
+
+<br>
+                <br>
+				<p><input type="submit" value="submit"/></p>
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}
